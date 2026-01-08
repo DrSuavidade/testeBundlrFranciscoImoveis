@@ -16,17 +16,19 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Image with Ken Burns Effect */}
+      {/* Background Video */}
       <motion.div 
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
         transition={{ duration: 10, ease: "easeOut" }}
         className="absolute inset-0 z-0"
       >
-        <img 
-          src="https://images.unsplash.com/photo-1513584685908-2274fc5a4ee7?auto=format&fit=crop&q=80&w=2500"
-          alt="Luxury Interior" 
-          className="w-full h-full object-cover"
+        <video 
+          src="/607251_Drone_Mountains_Nature_3840x2160 (1).mp4"
+          autoPlay
+          muted
+          loop
+          className="w-full h-full object-cover filter blur-sm"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
       </motion.div>
