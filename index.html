@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Francisco Imóveis | Real Estate Portugal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              primary: '#1A1A1A', // Deep Charcoal
+              accent: '#005F4B', // Deep Green / Azulejo vibe
+              sand: '#F9F7F2', // Warm White
+              'sand-dark': '#EBE8E1',
+            },
+            backgroundImage: {
+              'noise': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F9F7F2;
+        color: #1A1A1A;
+        font-family: 'Manrope', sans-serif;
+      }
+      .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.24.10"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
